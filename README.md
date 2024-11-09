@@ -1,0 +1,1 @@
+This is a demo of the google maps store locator feature with extended component library (https://github.com/googlemaps/extended-component-library/blob/main)
