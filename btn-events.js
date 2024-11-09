@@ -1,3 +1,4 @@
+// seperate file for jquery methods
 $(document).ready(function(){
   $("#btn-retract").hide();
   $("#btn-expand").click(function(){
