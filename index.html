@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Locator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+      const CONFIGURATION = {
+        "locations": [
+          {"coords":{"lat":52.0,"lng":0.0},"placeId":"ChIJ5Sz52pGAhYAR1raOybzuDp8"}
+        ],
+        "mapOptions": {"center":{"lat":52.0,"lng":0.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+        "mapsApiKey": "AIzaSyDwJqqHIUFZEvhqi5kwcwH1chIme0PYGvs",
+        "capabilities": {"input":false,"autocomplete":false,"directions":false,"distanceMatrix":false,"details":false,"actions":true}
+      };
+
+    </script>
+    <script src="onload.js"></script>
+    <script type="text/javascript" src="btn-events.js"></script>
+    <script type="text/javascript" src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  </head>
+  <body>
+  	<container>
+  		<button type="button" id="btn-expand" class="btn btn-primary">Expand</button>
+  		<button type="button" id="btn-retract" class="btn btn-primary">Retract</button>
+
+	    <!-- Please note unpkg.com is unaffiliated with Google Maps Platform. -->
+	    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
+
+	    <!-- Uses components from the Extended Component Library; see
+	         https://github.com/googlemaps/extended-component-library for more information
+	         on these HTML tags and how to configure them. -->
+	    <gmpx-api-loader key="AIzaSyDwJqqHIUFZEvhqi5kwcwH1chIme0PYGvs" solution-channel="GMP_QB_locatorplus_v10_cF"></gmpx-api-loader>
+	    <gmpx-store-locator map-id="39ca06554dede57b"></gmpx-store-locator>
+  	</container>
+  	<script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </body>
+</html>

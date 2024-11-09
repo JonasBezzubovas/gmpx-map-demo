@@ -1,0 +1,4 @@
+$("btn-expand").click(function(){
+  // action goes here!!
+  alert("clicked");
+}); 
